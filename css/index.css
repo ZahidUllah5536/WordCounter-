@@ -1,0 +1,432 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* navstart */
+
+.navbg {
+  background-color: #fb6060;
+}
+
+.navtext a {
+  font-size: 18px;
+  font-weight: 550px;
+  color: white;
+}
+
+.navtext a:hover {
+  color: black;
+}
+
+.navbar-toggler .fas {
+  color: white;
+  font-size: 24px;
+}
+
+/* navend */
+
+/* hero section start */
+
+.result-section {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.firstrow {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  /* Allows items to stack */
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.firstrow {
+  background-color: white;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.firstrow .first-col {
+  font-size: 18px;
+  color: #606060;
+  text-align: center;
+  border-bottom: 10px solid #fb6060;
+
+}
+
+.result-section .first-col .first-head {
+  padding-top: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.result-section .sec-col {
+  font-size: 18px;
+  color: #606060;
+  text-align: center;
+  border-bottom: 10px solid #51abff;
+}
+
+.result-section .sec-col .sec-head {
+  padding-top: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.vl {
+  border-left: 2px solid #a1a1a1;
+  height: auto;
+  align-self: stretch;
+  /* Allow the line to adjust based on content */
+  margin: 0 10px;
+  /* Add horizontal spacing */
+}
+
+.third-col {
+  font-size: 18px;
+  color: #606060;
+  text-align: center;
+  border-bottom: 10px solid #fb6060;
+}
+
+.third-col .third-head {
+  padding-top: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.fourth-col {
+  font-size: 18px;
+  color: #606060;
+  text-align: center;
+  border-bottom: 10px solid #51abff;
+  
+}
+
+.fourth-col .fourth-head {
+  padding-top: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.leftside-col {
+  display: flex;
+  flex-wrap: wrap;
+  /* Stack items on smaller screens */
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  /* Adjust height dynamically */
+  margin: 20px auto;
+}
+
+.firstleftside-icon {
+  margin-top: 30px;
+  margin-left: 40px;
+
+}
+
+.secondleftside-icon {
+  margin-top: 80px;
+  margin-left: 35px;
+
+}
+
+.thirdleftside-icon {
+  margin-top: 90px;
+  margin-left: 35px;
+}
+
+.text-area {
+  width: 100%;
+  height: 300px;
+  /* Reasonable height */
+  max-width: 100%;
+  /* Prevent overflow */
+  margin: 20px auto;
+  /* Center text area */
+  padding: 15px;
+}
+
+.text-area:focus {
+  outline: none;
+}
+
+.text-area::placeholder {
+  color: #909090;
+  font-size: 20px;
+}
+
+/* herosectin responsive start */
+
+@media only screen and (max-width: 768px) {
+  .firstrow {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .vl {
+    display: none;
+    /* Hide vertical lines on small screens */
+  }
+
+  .text-area {
+    height: 200px;
+    padding: 10px;
+  }
+
+  .leftside-col {
+    height: auto;
+    justify-content: space-around;
+  }
+
+  .firstleftside-icon,
+  .secondleftside-icon,
+  .thirdleftside-icon {
+    margin: 5px;
+    width: 30px;
+    /* Smaller icon size */
+    height: auto;
+  }
+}
+
+
+
+/* herosectin responsive end */
+
+
+/* About section start */
+.aboutsect {
+  margin-top: 100px;
+  height: 600px;
+}
+
+.aboutsect img {
+  margin-top: 30px;
+}
+
+.aboutsect h1 span {
+  color: #fb6060;
+  font-weight: bold;
+}
+
+.aboutsect h1 {
+  margin-top: 60px;
+}
+
+.aboutsect p {
+  margin-top: 30px;
+  line-height: 2;
+}
+
+/* about section media quiery start */
+@media only screen and (max-width: 768px) {
+  .aboutsect {
+    margin-top: 70px;
+    height: auto;
+
+    h1 {
+      margin-left: -20px;
+    }
+  }
+
+  .aboutsect img {
+    height: 400px;
+    margin-top: 30px;
+    margin-left: -30px;
+  }
+
+  .aboutsect p {
+    margin-top: 30px;
+    line-height: 1.5;
+    margin-left: -20px;
+    word-wrap: break-word;
+    margin-bottom: 30px;
+  }
+}
+
+/* about section media quiery end */
+
+/* About section end */
+
+/* footer section start */
+.footer img {
+  margin-top: 10px;
+}
+
+.footer p {
+  color: #606060;
+}
+
+.quicklink {
+  margin-top: 10px;
+}
+
+.quicklink a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.quicklink a:hover {
+  transform: translateY(-5px);
+  color: #fb6060;
+  text-decoration: none;
+}
+
+.followlink {
+  margin-top: 10px;
+}
+
+.followlink a {
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.followlink a:hover {
+  transform: translateY(-5px);
+  color: #fb6060;
+  text-decoration: none;
+}
+
+.footer hr {
+  margin-top: 150px;
+  width: 1000px;
+  height: 1px;
+  margin-left: 150px;
+  background-color: #cccccc;
+}
+
+/* footer media quarry start */
+@media only screen and (max-width: 768px) {
+  .footer hr {
+    margin-top: 100px;
+    width: auto;
+    height: 1px;
+    margin-left: 0px;
+    background-color: #cccccc;
+  }
+
+  .quicklink a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s;
+    /* Add transition for smooth effect */
+  }
+
+  .quicklink a:hover {
+    transform: translateY(-5px);
+    /* Move the link up slightly on hover */
+    color: #fb6060;
+    /* Change link color on hover */
+  }
+}
+
+/* footer media quarry end */
+/* footer section end */
+
+/* lastsection start */
+.lastsect {
+  background-color: #fb6060;
+  margin-top: 30px;
+}
+
+.lastsect p {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* lastsection end */
+
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbg {
+  background-color: #fb6060;
+}
+
+.navtext .nav-link {
+  color: white;
+  margin-right: 15px;
+}
+
+.navtext .nav-link:hover {
+  color: black;
+}
+
+/* Hero Section */
+.result-section {
+  margin-top: 50px;
+}
+
+.firstrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px;
+}
+
+.vl {
+  display: none; /* Hidden by default for better responsiveness */
+}
+
+.text-area {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+/* About Section */
+.aboutsect img {
+  max-width: 100%;
+  height: auto;
+}
+
+.aboutsect h1 span {
+  color: #fb6060;
+}
+
+/* Footer */
+.footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fb6060;
+}
+
+@media (max-width: 768px) {
+  .firstrow {
+    flex-direction: column;
+  }
+
+  .text-area {
+    height: 150px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}

@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* navstart */
+
+.navbg {
+  background-color: #fb6060;
+}
+
+.navtext a {
+  font-size: 18px;
+  font-weight: 550px;
+  color: white;
+}
+
+.navtext a:hover {
+  color: black;
+}
+
+.navbar-toggler .fas {
+  color: white;
+  font-size: 24px;
+}
+
+/* navend */
+
+/* hero section start */
+.herobg {
+  position: relative;
+  height: 450px;
+}
+
+.herobg::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  background-image: url(../images/grammarherobg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
+.herotext {
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 50px;
+  line-height: 1.6;
+
+  p {
+    color: #909090;
+    font-size: 24px;
+  }
+}
+
+.herotext h1 {
+  font-weight: bold;
+}
+
+.herotext span {
+  color: #fb6060;
+  font-weight: bold;
+}
+
+/* hero section media quarry start */
+@media only screen and (max-width: 768px) {
+  .herotext {
+    margin-left: 0;
+    margin-top: 70px;
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+/* hero section media quarry end */
+/* hero section end */
+
+/* faq section start */
+.faqsec {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 48rem;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 30px 0;
+
+    span {
+      color: #fb6060;
+    }
+  }
+
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded="true"] {
+  border-bottom: 1px solid #fb6060;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: black;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #fb6060;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #fb6060;
+  border: 1px solid #fb6060;
+}
+
+.accordion button .accordion-title {
+  padding: 5em 2em 2em 0;
+  font-size: 28px;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded="true"] {
+  color: black;
+}
+
+.accordion button[aria-expanded="true"] .icon::after {
+  width: 0;
+}
+
+.accordion button[aria-expanded="true"]+.accordion-content {
+  opacity: 1;
+  max-height: 20em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+/* faq section end */
+
+
+/* footer section start */
+.footer img {
+  margin-top: 10px;
+}
+
+.footer p {
+  color: #606060;
+}
+
+.quicklink {
+  margin-top: 10px;
+}
+
+.quicklink a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.quicklink a:hover {
+  transform: translateY(-5px);
+  color: #fb6060;
+  text-decoration: none;
+}
+
+.followlink {
+  margin-top: 10px;
+}
+
+.followlink a {
+  display: block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.followlink a:hover {
+  transform: translateY(-5px);
+  color: #fb6060;
+  text-decoration: none;
+}
+
+.footer hr {
+  margin-top: 150px;
+  width: 1000px;
+  height: 1px;
+  margin-left: 150px;
+  background-color: #cccccc;
+}
+
+/* footer media quarry start */
+@media only screen and (max-width: 768px) {
+  .footer hr {
+    margin-top: 100px;
+    width: auto;
+    height: 1px;
+    margin-left: 0px;
+    background-color: #cccccc;
+  }
+
+  .quicklink a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s;
+    /* Add transition for smooth effect */
+  }
+
+  .quicklink a:hover {
+    transform: translateY(-5px);
+    /* Move the link up slightly on hover */
+    color: #fb6060;
+    /* Change link color on hover */
+  }
+}
+
+/* footer media quarry end */
+/* footer section end */
+
+/* lastsection start */
+.lastsect {
+  background-color: #fb6060;
+  margin-top: 30px;
+}
+
+.lastsect p {
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* lastsection end */

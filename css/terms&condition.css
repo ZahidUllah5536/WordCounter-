@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /* navstart */
+
+.navbg {
+    background-color: #fb6060;
+  }
+  .navtext a {
+    font-size: 18px;
+    font-weight: 550px;
+    color: white;
+  }
+  .navtext a:hover {
+    color: black;
+  }
+  
+  .navbar-toggler .fas {
+    color: white;
+    font-size: 24px;
+  }
+  /* navend */
+
+  /* terms and condition start */
+  .termcond{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 8px;
+    border-radius: 10px;
+    margin-top: 150px;
+    box-sizing: border-box;
+    span{
+           color: #fb6060;
+    }
+    h1{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-weight: 600;
+    }
+    p{
+        color: #525252;
+        line-height: 24px;
+        padding-bottom: 20px;
+    }
+
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .termcond{
+        margin-top: 100px;
+
+    }
+  }
+  /* terms and condition end  */
+
+  /* footer section start */
+.footer img {
+    margin-top: 10px;
+  }
+  .footer p {
+    color: #606060;
+  }
+  
+  .quicklink {
+    margin-top: 10px;
+  }
+  .quicklink a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  .quicklink a:hover {
+    transform: translateY(-5px);
+    color: #fb6060;
+    text-decoration: none;
+  }
+  .followlink{
+    margin-top: 10px;
+  }
+  .followlink a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+  }
+  .followlink a:hover {
+    transform: translateY(-5px);
+    color: #fb6060;
+    text-decoration: none;
+  }
+  .footer hr {
+    margin-top: 150px;
+    width: 1000px;
+    height: 1px;
+    margin-left: 150px;
+    background-color: #cccccc;
+  }
+  
+  /* footer media quarry start */
+  @media only screen and (max-width: 768px) {
+    .footer hr {
+      margin-top: 100px;
+      width: auto;
+      height: 1px;
+      margin-left:0px;
+      background-color: #cccccc;
+    }
+    .quicklink a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #333;
+      transition: transform 0.3s; /* Add transition for smooth effect */
+    }
+    .quicklink a:hover {
+      transform: translateY(-5px); /* Move the link up slightly on hover */
+      color: #fb6060; /* Change link color on hover */
+    }
+  }
+  
+  /* footer media quarry end */
+  /* footer section end */
+  
+  /* lastsection start */
+  .lastsect{
+    background-color: #fb6060;
+    margin-top: 30px;
+  }
+  .lastsect p{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+  }
+  /* lastsection end */
